@@ -66,7 +66,7 @@ self.addEventListener("fetch", function (evt) {
 });
 
 self.addEventListener("fetch", function (evt) {
-  if (evt.request.url.includes("/api/")) {
+  if (evt.request.url.includes("/api/transaction")) {
     console.log("[Service Worker] Fetch (data)", evt.request.url);
 
     evt.respondWith(
