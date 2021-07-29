@@ -1,10 +1,22 @@
-# TechBlog 14_MVC
+# 19_PWA
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-For this assignment I was tasked with creating a fitness tracker app. I did this by creating a mongo database and mongoose schema with Express to handle the routes.
+Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+
+The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+
+Offline Functionality:
+
+- Enter deposits offline
+
+- Enter expenses offline
+
+When brought back online:
+
+- Offline entries should be added to tracker.
 
 ## Table of Contents
 
@@ -18,12 +30,14 @@ For this assignment I was tasked with creating a fitness tracker app. I did this
 ## Deployment
 
 The app can be found at this link:
-https://damp-cove-83188.herokuapp.com/?id=60f60df50b56150015cd58f3
+https://radiant-shelf-24566.herokuapp.com/
 
 ## User Story
 
 ```md
-As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+AS AN avid traveller
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
+SO THAT my account balance is accurate when I am traveling
 ```
 
 ## Mock-Up
@@ -35,17 +49,9 @@ The following image shows a screenshot of the deployed application.
 ## Acceptance Criteria
 
 ```md
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
-
-The user should be able to:
-
-- Add exercises to the most recent workout plan.
-
-- Add new exercises to a new workout plan.
-
-- View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
-
-- View the total duration of each workout from the past seven workouts on the `stats` page.
+GIVEN a user is on Budget App without an internet connection
+WHEN the user inputs a withdrawal or deposit
+THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 ```
 
 ## License
