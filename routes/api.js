@@ -29,8 +29,10 @@ router.get("/api/transaction", (req, res) => {
     })
     .catch((err) => {
       res.status(404).json(err);
+      console.log(err);
     });
 });
+
 router.get("/api/transaction/bulk", (req, res) => {
   Transaction.find({})
     .sort({ date: -1 })
